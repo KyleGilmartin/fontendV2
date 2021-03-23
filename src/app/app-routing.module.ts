@@ -9,6 +9,7 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AuthGuard } from "./auth.guard";
+import { HistoryComponent } from './components/history/history.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfileComponent, canActivate: [AuthGuard] },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'email-verification', component: VerifyEmailComponent }
+  { path: 'email-verification', component: VerifyEmailComponent },
+  { path: 'history', component: HistoryComponent, canActivate: [AuthGuard] }
 ];
 
 @NgModule({

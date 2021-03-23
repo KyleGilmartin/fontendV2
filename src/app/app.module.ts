@@ -37,6 +37,7 @@ import { GoogleMapsComponent } from './components/google-maps/google-maps.compon
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { HistoryComponent } from './components/history/history.component';
 
 
 @NgModule({
@@ -52,7 +53,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     HomeComponent,
     ProfileComponent,
     GetlocationsComponent,
-    GoogleMapsComponent
+    GoogleMapsComponent,
+    HistoryComponent
 
 
   ],
